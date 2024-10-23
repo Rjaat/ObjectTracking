@@ -503,17 +503,17 @@ if st.session_state.input_video and os.path.exists(st.session_state.input_video)
 
 # Display processed video
 if st.session_state.processing_complete and st.session_state.processed_video:
-    st.markdown("<div class='section-divider'></div>", unsafe_allow_html=True)
-    st.markdown("""
-        <div class='section-header premium-accent'>
-            <h3>🎥 Processed Result</h3>
-        </div>
-    """, unsafe_allow_html=True)
+    # st.markdown("<div class='section-divider'></div>", unsafe_allow_html=True)
+    # st.markdown("""
+    #     <div class='section-header premium-accent'>
+    #         <h3>🎥 Processed Result</h3>
+    #     </div>
+    # """, unsafe_allow_html=True)
     
-    with st.container():
-        st.markdown('<div class="video-container">', unsafe_allow_html=True)
-        st.video(st.session_state.processed_video)
-        st.markdown('</div>', unsafe_allow_html=True)
+    # with st.container():
+    #     st.markdown('<div class="video-container">', unsafe_allow_html=True)
+    #     st.video(st.session_state.processed_video)
+    #     st.markdown('</div>', unsafe_allow_html=True)
     
     try:
         with open(st.session_state.processed_video, 'rb') as f:
